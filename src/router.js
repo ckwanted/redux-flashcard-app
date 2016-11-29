@@ -19,7 +19,8 @@ const history = syncHistoryWithStore(browserHistory, store);
  */
 import {
     App,
-    NotFound
+    NotFound,
+    FlashCard
 } from './components';
 
 const RouterComponent = () => {
@@ -28,6 +29,7 @@ const RouterComponent = () => {
 
             <Router history={history}>
                 <Route component={App}>
+                    <Route path="/" component={FlashCard}/>
                     <Route path="*" component={NotFound}/>
                 </Route>
             </Router>
