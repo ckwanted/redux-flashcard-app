@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: #F9D8AD url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/111167/grad-bg.png") no-repeat center center / cover;
+  background: linear-gradient(to left, $body-bg-1, $body-bg-2);
 }

@@ -6,13 +6,9 @@ class Card extends Component {
         card: React.PropTypes.object.isRequired
     };
 
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
-            <div className="card">
+            <div className="cards">
                 <p>{this.props.card.text}</p>
             </div>
         );

@@ -1,15 +1,26 @@
-.card {
-  background: white;
-  flex: 0 1 calc(25% - 20px);
-  height: 100px;
-  overflow: auto;
-  margin: 10px;
-  box-shadow: 0 5px 15px 0 rgba(#000, .25);
+.cards {
+  @include card();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 
   > p {
     margin: 0;
-    padding: 10px;
     color: #555;
+    user-select: none;
   }
+}
 
+.card-plus {
+  @include card();
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  > img {
+    background: #555;
+    border-radius: 50%;
+  }
 }

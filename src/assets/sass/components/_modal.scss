@@ -1,0 +1,67 @@
+.modal-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $modal-bg;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  > div {
+    flex: 0 1 320px;
+    background: $modal-card-bg;
+
+    header {
+      background: $modal-card-header-bg;
+      color: white;
+
+      h2 {
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+        user-select: none;
+      }
+    }
+
+    form {
+      padding: 10px;
+
+      input {
+        margin: 10px 0;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        width: 100%;
+      }
+
+      > .flex-modal {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+          flex: 1;
+          color: $modal-card-btn-color;
+          padding: 10px;
+          border: 0;
+          cursor: pointer;
+
+          &:first-child {
+            background: $modal-card-btn-1;
+            margin-right: 2px;
+          }
+
+          &:last-child {
+            background: $modal-card-btn-2;
+          }
+
+        }
+      }
+    }
+
+  }
+
+}

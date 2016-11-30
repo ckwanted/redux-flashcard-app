@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as actionType from '../../actions';
-import {Card} from './Card';
+import {Card, CardPlus, Modal} from '../index';
 
 @connect((state) => {
     return {
@@ -10,21 +10,16 @@ import {Card} from './Card';
 })
 class FlashCard extends Component {
 
-    constructor(props) {
-        super(props);
-    }
-
-    componentWillMount() {
-        this.props.dispatch(actionType.addCard({"text": "Iban"}));
-        this.props.dispatch(actionType.addCard({"text": "Ayose"}));
-    }
-
     render() {
         return (
-            <div className="flex-flash-cards">
-                {this.props.cards.map((card) => {
-                    return (<Card key={card.id} card={card} />);
-                })}
+            <div>
+                <Modal />
+                <div className="flex-flash-cards">
+                    {this.props.cards.map((card) => {
+                        return (<Card key={card.id} card={card}/>);
+                    })}
+                    <CardPlus />
+                </div>
             </div>
         );
     }
