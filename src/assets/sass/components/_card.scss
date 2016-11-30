@@ -1,9 +1,9 @@
 .card {
   background: white;
-  flex: 0 1 calc(25% - 10px);
+  flex: 0 1 calc(25% - 20px);
   height: 100px;
   overflow: auto;
-  margin: 5px;
+  margin: 10px;
   box-shadow: 0 5px 15px 0 rgba(#000, .25);
 
   > p {

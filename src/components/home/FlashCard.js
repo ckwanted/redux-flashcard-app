@@ -20,7 +20,6 @@ class FlashCard extends Component {
     }
 
     render() {
-        console.log(this.props);
         return (
             <div className="flex-flash-cards">
                 {this.props.cards.map((card) => {
