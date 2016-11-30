@@ -1,0 +1,15 @@
+.card {
+  background: white;
+  flex: 0 1 calc(25% - 10px);
+  height: 100px;
+  overflow: auto;
+  margin: 5px;
+  box-shadow: 0 5px 15px 0 rgba(#000, .25);
+
+  > p {
+    margin: 0;
+    padding: 10px;
+    color: #555;
+  }
+
+}

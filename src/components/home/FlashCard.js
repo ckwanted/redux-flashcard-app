@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import * as actionType from '../../actions';
+import {Card} from './Card';
 
 @connect((state) => {
     return {
@@ -14,14 +15,17 @@ class FlashCard extends Component {
     }
 
     componentWillMount() {
-        this.props.dispatch(actionType.addCard({"text" : "Iban"}));
-        this.props.dispatch(actionType.addCard({"text" : "Ayose"}));
+        this.props.dispatch(actionType.addCard({"text": "Iban"}));
+        this.props.dispatch(actionType.addCard({"text": "Ayose"}));
     }
 
     render() {
+        console.log(this.props);
         return (
-            <div>
-                flash
+            <div className="flex-flash-cards">
+                {this.props.cards.map((card) => {
+                    return (<Card key={card.id} card={card} />);
+                })}
             </div>
         );
     }
