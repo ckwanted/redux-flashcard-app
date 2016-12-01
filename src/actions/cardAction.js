@@ -10,3 +10,10 @@ export const addCard = (card) => {
         }
     }
 };
+
+export const editCard = (card) => {
+    return {
+        type: actionType.EDIT_CARD,
+        payload: card
+    }
+};

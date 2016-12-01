@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import * as actionType from '../../actions';
 import {Card, CardPlus, Modal} from '../index';
 
 @connect((state) => {

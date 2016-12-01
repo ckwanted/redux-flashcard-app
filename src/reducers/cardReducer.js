@@ -7,6 +7,10 @@ export default (state = [], action) => {
                 ...state,
                 action.payload
             ];
+        case actionType.EDIT_CARD:
+            let newState = state.slice(0);
+            newState[parseInt(action.payload.id) - 1] = action.payload;
+            return newState;
         default:
             return state;
     }

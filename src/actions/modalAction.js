@@ -1,8 +1,9 @@
 import * as actionType from './types';
 
-export const showModal = () => {
+export const showModal = (type) => {
     return {
-        type: actionType.SHOW_MODAL
+        type: actionType.SHOW_MODAL,
+        payload: type
     }
 };
 
