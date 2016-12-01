@@ -1,0 +1,18 @@
+@mixin card() {
+  background: white;
+  flex: 0 1 calc(25% - 20px);
+  height: 125px;
+  overflow: auto;
+  margin: 10px;
+  box-shadow: 0 5px 15px 0 rgba(#000, .25);
+  transition: all .5s ease;
+
+  &:hover {
+    background: rgba(#000, .2);
+
+    > * {
+      color: navajowhite;
+    }
+  }
+
+}
