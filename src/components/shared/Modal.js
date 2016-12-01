@@ -38,7 +38,7 @@ class Modal extends Component {
                         <h2>Edit Card</h2>
                     </header>
                     <form onSubmit={this._editCard.bind(this)}>
-                        <input type="text" name="text" placeholder="text" defaultValue={this.props.modal.card.text}/>
+                        <input type="text" name="text" placeholder="text"/>
                         <div className="flex-modal">
                             <button type="button" onClick={() => this.props.dispatch(actionType.closeModal())}>Cancel</button>
                             <button type="submit">Edit</button>

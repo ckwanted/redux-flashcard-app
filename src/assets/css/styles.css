@@ -9,8 +9,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: -webkit-linear-gradient(right, #834d9b, #d04ed6);
-  background: linear-gradient(to left, #834d9b, #d04ed6);
+  background: #d04ed6;
 }
 
 .flex-flash-cards {
